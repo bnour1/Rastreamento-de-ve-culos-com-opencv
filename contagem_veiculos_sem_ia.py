@@ -1,7 +1,7 @@
 import cv2
 
 # Inicialização do vídeo
-video_path = 'video4.mp4'  # Define o caminho para o arquivo de vídeo
+video_path = 'video2.mp4'  # Define o caminho para o arquivo de vídeo
 cap = cv2.VideoCapture(video_path)  # Abre o vídeo especificado
 
 # Inicialização do subtrator de fundo
@@ -12,7 +12,7 @@ fgbg = cv2.createBackgroundSubtractorMOG2(history=500, varThreshold=50, detectSh
 # detectShadows=True: Habilita a detecção de sombras (opcional).
 
 # Parâmetros para a linha de contagem
-line_position = 400  # Posição vertical da linha de contagem na imagem
+line_position = 500  # Posição vertical da linha de contagem na imagem
 offset = 6  # Tolerância (em pixels) para definir se um veículo cruzou a linha de contagem
 
 # Contagem de veículos
